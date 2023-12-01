@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0pxs;
+        }
+
+        h1 {
+            margin-top: 23px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dad9d8;
+        }
+
+        .loginpage {
+            background-color: white;
+            width: 30%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 6px;
+        }
+
+        .user {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid #52515132;
+            width: 350px;
+            padding: 10px 0px;
+            outline: hidden;
+            background: transparent;
+        }
+
+        label {
+
+            position: absolute;
+            left: 0px;
+            bottom: 10px;
+            color: #6d6c6c;
+            pointer-events: none;
+        }
+
+        .button {
+            margin-top: 50px;
+            text-align: center;
+        }
+ 
+        .user input:focus{
+            outline: none;
+            border-color: #1e87f0;
+            transition: all 0.3s ease-in-out;
+        }
+        .user input:focus~label{
+            bottom: 32px;
+            color: #1e87f0;
+            font-size: 12px;
+            transition: all 0.3s ease-in-out;
+        }
+        a{
+           padding: 10px 150px; 
+           border-radius: 5px;
+           text-decoration: none;
+           background-color: #47a2fc;
+           color: white;
+        }
+        a:hover{
+            background-color: #1e87f0;
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loginpage">
+            <h1>Login</h1>
+            <form>
+                <div class="user">
+                    <input type="text" id="username" required>
+                    <label for="username" class="use">Username</label>
+                </div>
+                <div class="user">
+                    <input type="password" id="password" required>
+                    <label for="password" class="pass">Password</label>
+                </div>
+                <div class="button">
+                    <a href=""><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+
+
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
